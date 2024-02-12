@@ -1,4 +1,4 @@
 .cache
 build
 vcpkg_installed
-*.json
+compile_commands.json
