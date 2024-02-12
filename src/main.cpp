@@ -63,9 +63,9 @@ int main(int argc, char *argv[]) {
   std::string stop_str;
 
   auto cli = (
-    clipp::option("-x") & clipp::value("X variable", x_str),
-    clipp::option("-s") & clipp::value("Simulation step", step_str),
-    clipp::option("-S") & clipp::value("Simulation stop time", stop_str)
+    clipp::required("-x") & clipp::value("X variable", x_str),
+    clipp::required("-s") & clipp::value("Simulation step", step_str),
+    clipp::required("-S") & clipp::value("Simulation stop time", stop_str)
   ); 
 
   if(!clipp::parse(argc, argv, cli)){
