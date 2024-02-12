@@ -1,0 +1,6 @@
+{
+  "dependencies": [
+    "clipp",
+    "fmi4cpp"
+  ]
+}
